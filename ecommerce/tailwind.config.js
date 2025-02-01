@@ -2,7 +2,11 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{html,js,jsx,ts,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/primereact/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -17,9 +21,9 @@ export default {
         lightGrey: "#F5F5F5",
         lightGrey1: "#8F8F8F",
         darkGray2: "#474747",
-        darkGray: "#1F1F1F"
+        darkGray: "#1F1F1F",
       },
-    }, 
+    },
   },
   plugins: [],
 };

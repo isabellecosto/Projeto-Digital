@@ -52,7 +52,7 @@ const Home: React.FC = () => {
         <div className="flex flex-col gap-8 my-12 items-center justify-center">
         <p className="font-bold text-2xl">Coleções em Destaque</p>
           <div className="flex gap-8">
-          <Category src={Camiseta} text="Camisetas" />
+            <Category src={Camiseta} text="Camisetas" />
             <Category src={Calca} text="Calças" />
             <Category src={Calca} text="Bonés" />
             <Category src={Phone} text="Headphones" />

@@ -1,0 +1,95 @@
+.login {
+    background: rgb(34, 195, 193);
+    background: linear-gradient(
+      9deg,
+      rgba(34, 195, 193, 0.3309698879551821) 0%,
+      rgba(253, 187, 45, 0.29175420168067223) 100%
+    );
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 40px;
+    & .p-card {
+      width: 400px;
+  
+      @media (min-width: 320px) and (max-width: 480px) {
+        width: 320px;
+      }
+  
+      & form {
+        margin: 15px 0 0 0;
+  
+        & h4 {
+          text-align: center;
+          font-weight: 600;
+          margin: 0 0 20px 0;
+        }
+      }
+  
+      & form .input-controll {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin: 20px 0;
+      }
+  
+      & form .input-controll label {
+        font-size: 13px;
+        font-weight: 500;
+      }
+  
+      &.p-component > *:first-child {
+        background-color: var(--p-green-300);
+      }
+  
+      &.p-component {
+        position: relative;
+      }
+      &.p-component .header-form {
+        position: relative;
+        min-height: 100px;
+      }
+      &.p-component .header-form .text {
+        margin-top: 25px;
+        padding-left: 20px;
+      }
+      &.p-component .header-form .text h4 {
+        font-weight: bolder;
+      }
+      &.p-component .header-form .text p {
+        font-size: 12px;
+      }
+  
+      &.p-component .header-img-logo {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        background-color: white;
+        padding: 10px;
+        width: 70px;
+        border-radius: 50%;
+        left: 15px;
+        top: 95px;
+        box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.05);
+      }
+      &.p-component .header-img-logo img {
+        width: 90%;
+      }
+  
+      &.p-component .header-form img {
+        width: 180px;
+        position: absolute;
+        right: 3px;
+        bottom: 0;
+        @media (min-width: 320px) and (max-width: 480px) {
+          width: 160px;
+        }
+      }
+    }
+  }
+  

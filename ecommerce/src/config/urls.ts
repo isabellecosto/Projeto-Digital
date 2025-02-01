@@ -1,0 +1,3 @@
+export const BACKOFFICE_API_URL = import.meta.env.VITE_BACKOFFICE_API_URL
+export const BACKOFFICE_FILE_STORAGE_URL = import.meta.env
+  .VITE_BACKOFFICE_FILE_STORAGE_URL

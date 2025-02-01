@@ -26,9 +26,9 @@ const ListProductsEmAlta = () => {
   const productsEmAlta = products.filter((produto) => produto.emAlta);
 
   return (
-    <div className="grid grid-cols-4 gap-4">
+    <div className="grid grid-cols-4 gap-6">
       {productsEmAlta.map((product, index) => (
-        <div className="w-[292px] h-[439px]" key={index}>
+        <div className="w-[102%] h-[40%]" key={index}>
           <div className="w-full h-[321px] bg-white drop-shadow-lg rounded flex flex-col items-center justify-center gap-5">
             <div className="w-full px-5">{product.promotion ? <Promotion promoText="30% off" /> : ""}</div>
               <img
