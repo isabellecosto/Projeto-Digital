@@ -4,7 +4,7 @@ import { PrimeReactProvider } from 'primereact/api';
 
 const App = () => {
   return(
-    <PrimeReactProvider>
+    <PrimeReactProvider value={{ unstyled: true, pt: {} }}>
       <RouterProvider router={router} />
     </PrimeReactProvider>
   )

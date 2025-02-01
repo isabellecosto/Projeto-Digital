@@ -9,7 +9,7 @@ const AppHeader = () => {
   return (
     <div className="mx-20 my-5">
       <div className="flex justify-between">
-        <img src={LogoDigital} alt="Logo da digital College" />
+        <img src={LogoDigital} className="w-[270px]" alt="Logo da digital College" />
         <div className="flex w-[40rem] bg-secondaryColor p-4 rounded-lg border-color">
           <input
             className="w-full bg-transparent focus:outline-none "
@@ -38,6 +38,7 @@ const AppHeader = () => {
           <NavLink to="/products" end className={({ isActive }) => (isActive ? "text-primaryColor font-bold navlink" : "text-black")}>Produtos</NavLink>
           <NavLink to="/requests" className={({ isActive }) => (isActive ? "text-primaryColor font-bold navlink" : "text-black")}>Meus Pedidos</NavLink>
           <NavLink to="/cart" className={({ isActive }) => (isActive ? "text-primaryColor font-bold navlink" : "text-black")}>Carrinho </NavLink>
+          <NavLink to="/create-product" className={({ isActive }) => (isActive ? "text-primaryColor font-bold navlink" : "text-black")}>Cadastrar Produto</NavLink>
         </nav>
       </div>
     </div>
